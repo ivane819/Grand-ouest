@@ -161,7 +161,7 @@ section.services p:nth-child(2) {
 }
 
 .icon-box-container {
-  margin-top: 60px;
+  margin-top: 96px;
   display: flex;
   padding: 0 40px;
   gap: 20px;
@@ -180,7 +180,7 @@ section.services p:nth-child(2) {
 }
 .icon-box:hover {
   transform: translateY(-20px);
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 .icon-box p {
   text-transform: lowercase;
@@ -188,4 +188,31 @@ section.services p:nth-child(2) {
 }
 .icon-box img {
   width: 70px;
+}
+
+.container-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  gap: 20px;
+}
+.btn {
+  /* font-size: 18px; */
+  /* background-color: white; */
+  padding: 15px 20px;
+  border: 1px solid black;
+  font-weight: bold;
+}
+.btn.noir:link,
+.btn.noir:visiter {
+  background-color: black;
+  color: #fff;
+}
+.btn.noir:hover,
+.btn.noir:active,
+.btn.transparent:hover,
+.btn.transparent:active {
+  background-color: var(--coleur-principal);
+  border: 1px solid var(--coleur-principal);
+  color: #fff;
 }
