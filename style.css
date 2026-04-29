@@ -366,33 +366,24 @@ button.btn-noir:hover {
 
 .footer-information {
   display: flex;
-  justify-content: space-between;
-  padding: 40px;
-  gap: 20px;
+  justify-content: space-around;
+  padding: 60px 10%;
+  background-color: #fcfcfc;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  border-top: 1px solid #eee;
 }
 
 .footer-information .block {
   flex: 1;
-}
-
-.logo-footer {
-  width: 200px;
-  /* margin-top: 15px; */
+  padding: 0 20px;
 }
 
 .block1 p {
   font-size: 14px;
+  line-height: 1.6;
   margin-top: 15px;
-}
-
-.footer-information ul {
-  list-style: none;
-  padding: 0;
-}
-
-.block4 img {
-  width: 30px;
-  margin-right: 10px;
+  color: #666;
 }
 
 .footer-information h2,
@@ -400,4 +391,97 @@ button.btn-noir:hover {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #000;
+}
+
+.footer-information ul,
+.footer-information p {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.block4 {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.block4 img {
+  width: 24px;
+  height: auto;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.logo-footer {
+  width: 200px;
+}
+
+.block4 img:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+.footer-copyright {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-copyright p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 24px;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .header-text-block {
+    width: 95%;
+  }
+  .nav {
+    display: none;
+  }
+
+  .menu {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  form#prendreRendezvous input,
+  form#prendreRendezvous select,
+  form#prendreRendezvous button {
+    width: 90%;
+    margin: 5px 0;
+    height: 45px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .icon-box-container,
+  .etapes-fonction,
+  form#prendreRendezvous,
+  .footer-information,
+  .testimonials {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 }
