@@ -363,3 +363,41 @@ button.btn-noir:hover {
   font-style: italic;
   color: #888;
 }
+
+.footer-information {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 20px;
+}
+
+.footer-information .block {
+  flex: 1;
+}
+
+.logo-footer {
+  width: 200px;
+  /* margin-top: 15px; */
+}
+
+.block1 p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.footer-information ul {
+  list-style: none;
+  padding: 0;
+}
+
+.block4 img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.footer-information h2,
+.footer-information h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
