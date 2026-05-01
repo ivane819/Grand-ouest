@@ -485,3 +485,34 @@ footer {
     gap: 30px;
   }
 }
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  .icon-box-container,
+  .etapes-fonction,
+  .testimonial {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .icon-box-container > div,
+  .testimonial > div {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .header-text-block {
+    width: 80%;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+}
