@@ -314,7 +314,6 @@ button.btn-noir:hover {
   height: 400px;
   width: 100%;
   position: relative;
-  /* border: 4px solid red; */
 }
 
 #apercu .apercu-video {
@@ -442,18 +441,35 @@ footer {
 
 @media only screen and (max-width: 600px) {
   body {
-    font-size: 16px;
+    font-size: 12px;
   }
+
   h1 {
     font-size: 24px;
-    width: 100%;
-    padding: 0 10px;
+    /* width: 100%;
+    padding: 0 10px; */
+  }
+
+  section h2 {
+    font-size: 24px;
+    line-height: 1.4;
   }
   .header-text-block {
     width: 95%;
   }
   .nav {
     display: none;
+  }
+
+  .fonction.global-section h2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 15px;
+    margin-top: 20px;
+  }
+  .fonction.global-section p {
+    text-align: center;
+    padding: 0 20px;
   }
 
   .menu {
@@ -468,6 +484,29 @@ footer {
     margin: 5px 0;
     height: 45px;
   }
+
+  form#prendreRendezvous button {
+    padding: 10px;
+    height: 55px;
+  }
+
+  form#prendreRendezvous {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  form#prendreRendezvous button {
+    width: 90%;
+    height: auto;
+    min-height: 55px;
+    white-space: normal;
+    line-height: 1.2;
+    padding: 10px;
+  }
+
   img {
     max-width: 100%;
     height: auto;
@@ -475,14 +514,72 @@ footer {
 
   .icon-box-container,
   .etapes-fonction,
-  form#prendreRendezvous,
-  .footer-information,
+  .form#prendreRendezvous,
   .testimonials {
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
+  }
+
+  .qui-somme-nous {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .qui-somme-nous .text-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .qui-somme-nous .image-container img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+  #quiSommeNous {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  #quiSommeNous .image-container {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+
+  #quiSommeNous .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  #quiSommeNous .text-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 10px;
+  }
+
+  .icon-box-container,
+  .etapes-fonction {
+    margin-top: 54px;
+  }
+
+  section.global-section p:nth-child(2) {
+    margin-top: 10px;
   }
 }
 
